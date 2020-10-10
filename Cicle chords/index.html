@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Practica 1</title>
+</head>
+<body class="todo">
+    <h1>Cicle chords</h1>
+
+    <label for=""><h3>Ingrese el acorde por favor</h3></label><br>
+    <input type="text" id="Acorde"><br>
+
+    <input type="button" class="btn btn-primary" value="Mostrar Disminuido" onclick=" ProcesosDisminuir()">
+    <input type="button" class="btn btn-primary" value="Mostrar Aumentado" onclick=" ProcesosAumentar()">
+    <input type="button" class="btn btn-danger" value="Limpiar" onclick="Limpiar()">
+    <table  class="table table-dark centrado">
+        <thead>
+            <tr>
+              <th scope="col-xs-6"> Aumentado</th>
+              <th scope="col-xs-6"> Disminuido</th>
+            </tr>
+            <tr>
+                <th scope="col-xs-6"  id="mensaje"> </th>
+              <th scope="col-xs-6" id="mensaje2"> </th>
+            </tr>
+          </thead>
+    </table>
+  <footer>
+      <h4>Derechos de autor: Dawdax</h4>
+  </footer>
+      
+    <script src="scripts.js"></script>
+</body>
+</html>
